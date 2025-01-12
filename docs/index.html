@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icone miniature" type="image/png" href="/favicon.png"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
+  <style>
+  
+
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    
+    /*Barre de navigation*/
+
+    .navbar {
+      background-color: #34529E;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #nom_site{
+      font-family: "Marko One", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size:1.5em;
+      padding-left: 20px;
+      color:#8BA5E8;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding-right: 20px;
+    }
+    .navbar a{
+      color:#ffffff;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+  /*Bannière*/
+     
+    .taille_img{
+      width: 7%;
+      margin-left:1000px;
+      padding:0px;
+      margin-top:32px;
+      position: absolute;
+    }
+
+    .taille_img_fleur{
+      width: 10%;
+      margin-left:0px;
+      padding:0px;
+      margin-top:32px;
+      display:flex;
+    }
+
+.taille_img_bulle{
+      width: 15%;
+      margin-left:1100px;
+      padding:0px;
+      margin-top:32px;
+      position: absolute;
+    }
+
+    .hero-content{
+        
+        background-color: #6E85BF;
+        margin-top:140px;
+        padding: 50px;
+        padding-top: 20px;
+        text-align: left;
+        color: white;
+        border-radius: 25px;
+        width:800px; /* 999px; */
+        height: 180px;
+        /*display: block;*/
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .hero h1 {
+      display:flex;
+      font-weight: bold;
+      font-family: "Lemon", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .hero p{
+      justify-content: left;
+      padding:0px;
+      margin:0px;
+      
+    }
+
+    .bouton_vide {
+      margin-top: 15px;
+      padding: 10px 20px;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border:solid white 0.5px;
+      background-color: #6E85BF;
+    }
+    .bouton_vide a{
+      color:#ffffff;
+    }
+
+    .bouton_vide:hover{
+      background-color: #596ea4;
+    }
+
+    /*Projets*/
+
+    .projets {
+      padding: 20px;
+      text-align: left;
+      margin-bottom:40px;
+    }
+
+    #titre_section{
+      padding-left:250px;
+      color:#12088F;
+      margin:50px;
+    }
+
+    .projet-cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+
+    .card_cachees {
+      padding: 20px;
+      width: 200px;
+      border-radius: 10px;
+      margin-right:20px;
+      margin-bottom: 50px;
+    }
+
+
+
+
+    .card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      width: 200px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      color:#585454;
+      margin-right:20px;
+      box-shadow: 10px 9px #DBDBD4; /*rombre côté gauche -20px 16px */
+      margin-bottom: 50px;
+    }
+  
+    .card:hover{
+      background-color: rgb(245, 245, 254);
+    }
+    .card a{
+      color: #585454;
+    }
+
+    .card p{
+      color: #3B83EE;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    #miniature_petite{
+      height:230px;
+    }
+
+
+    #miniature_moyenne{
+      height:280px;
+    }
+
+    #miniature_normal{
+      height:340px;
+    }
+
+    #miniature_large{
+      height:370px;
+    }
+
+    #miniature_grande{
+      height:380px;
+    }
+
+    /*footer*/
+    
+
+   .contact img { 
+    margin-top:10px;
+    border: none; 
+    width:50px;
+    height:50px;
+
+  }
+
+    #logos{margin-right:20px;}
+
+  
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      footer {
+        background-color: #90A4E8;
+        color: black;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .left-section {
+        display: flex;
+        align-items: center;
+      }
+      .left-section img {
+        height: 40px;
+        margin-right: 10px;
+      }
+      .footer_links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .footer_links a{
+        color:black;
+      }
+
+      .contact {
+        position:absolute;
+        margin-left:0px;
+      }
+      .contact input{
+        background-color:#90A4E8;
+        border-color: #90A4E8;
+        box-shadow:none;
+        border:0 none; /* ca enlève l'ombre interieure du input*/
+        outline:0;
+        color:#90A4E8;
+      }
+      .contact a {
+        color: black;
+        text-decoration: none;
+      }
+      .contact a:hover {
+        text-decoration: underline;
+      }
+  </style>
+</head>
+<body>
+
+<!--Barre de navigation-->
+
+  <nav class="navbar">
+    <a id ="nom_site" href="index.html">Portfolio</a></div>
+    <ul class="nav-links">
+      <li><a href="communication.html">Communication</a></li>
+      <li><a href="webdesign.html">Webdesign</a></li>
+      <li><a href="graphisme.html">Graphisme</a></li>
+      <li><a href="videos.html">Vidéos</a></li>
+      <li><a href="a_propos.html">À propos</a></li>
+    </ul>
+  </nav>
+
+<!--Bannière-->
+<img class ="taille_img" src="media/emeline_chibi.png" alt="image d emeline" />
+<img class ="taille_img_bulle" src="media/bulle.png" alt="image de bulle disant :en recherche d alternance en communication" />
+
+  <div class="hero" id="hero">
+    <div class="hero-content">
+          <!--<img class ="taille_img_fleur" src="fleurs.png" alt="image d emeline" />-->
+
+      <h1>Besoin d’un coup de pouce ?</h1>
+      <p>
+        Je peux booster le référencement de votre site web (SEO, content </br>marketing),
+        gérer les réseaux sociaux de votre marque,</br> ou bien créer votre identité visuelle.
+      </p>
+      <button class="bouton_vide"><a href="a_propos.html">En savoir +</a></button>
+      <script>
+        localStorage.setItem('projet', 'ALeP'); 
+      </script>
+    </div>
+    
+
+
+
+
+
+
+
+
+<!--Cartes projets-->
+
+  <section class="projets">
+    <h3 id="titre_section">Intéressé ? </br>Jetez un oeil à mes projets universitaires</h3>
+
+    <div class="projet-cards">
+      <div class="card">
+        <a href="projet_alep.html">
+        <img src="media/couture_livre.png" alt="Couverture de livre realisee pour la maison d Editions ALeP" />
+          <h3>Partenariat avec les Editions ALeP</h3>
+          <p>Graphisme - Communication</p>
+        </a>
+      </div>
+      
+      <div class="card" id="miniature_grande">
+        <a href="projet_alep.html">
+        <img src="media/portrait_graphique.png" alt="Mon portrait entouré d'éléments graphiques" />
+          <h3>Portrait graphique</h3>
+          <p>Graphisme</p>
+        </a>
+      </div>
+
+      <div class="card" id="miniature_large">
+        <a href="projet_alep.html">
+        <img src="media/boule_neige.png" alt="Image de boule à neige en 3D" />
+        <h3>Boule à neige en 3D</h3>
+        <p>Graphisme - 3D</p>
+        </a>
+      </div>
+
+      
+    </div>
+
+
+
+
+
+
+    
+    <div class="projet-cards">
+
+      <div class="card" id="miniature_petite">
+        <a href="projet_alep.html">
+        <img src="media/guillaume.png" alt="Photo de Guillaume pendant son interview" />
+        <h3>Interview sur l'art visuel</h3>
+        <p>Montage vidéo</p>
+        </a> 
+        
+      </div>
+
+      <div class="card" id="miniature_petite">
+        <a href="projet_alep.html">
+        <img src="media/chika_miniature.png" alt="Miniature video de mes wallpapers animés" />
+        <h3>Wallpapers animés</h3>
+        <p>Montage vidéo -</br> Projets personnels</p>
+        </a> 
+        
+      </div>
+
+
+      <div class="card" id="miniature_petite">
+        <a href="projet_alep.html">
+        <img src="media/maquette_2_miniature.png" alt="Maquette de Green student" />
+          <h3>Maquette du site Green Student</h3>
+          <p>Webdesign</p>
+        </a>
+      </div>
+
+     
+
+
+
+
+
+      <div class="projet-cards">
+        
+        
+        <div class="card" id="miniature_grande">
+          <a href="projet_alep.html">
+            <img src="media/ils_etaient_dix.png" alt="Couverture refaite d'un livre" />
+              <h3>Couverture pour "Ils étaient dix"</h3>
+              <p>Graphisme</p>
+            </a>
+        </div>
+
+          <div class="card">
+            <a href="projet_alep.html">
+            <img src="media/a_lwest_fest.png" alt="Affiche du festival MMI" />
+            <h3>A l'West Fest</h3>
+            <p>Graphisme - Communication</p>
+            </a>
+          </div>
+    
+          <div class="card" id="miniature_normal">
+            <a href="projet_alep.html">
+            <img src="media/thomas_miniature.png" alt="Miniature de l'article" />
+            <h3>Article pour le webmagazine Iutopie</h3>
+            <p>Graphisme - Communication</p>
+            </a>
+          </div>
+      
+    </div>
+
+
+
+
+
+
+
+    <div class="projet-cards">
+
+      <div class="card" id="miniature_moyenne">
+        <a href="projet_alep.html">
+        <img src="media/portfolio_miniature.png" alt="Miniature de mon site portfolio" />
+        <h3>Maquette de mon site Portfolio</h3>
+        <p>Webdesign</p>
+        </a> 
+      </div>
+
+        <div class="card" id="miniature_petite">
+          <a href="projet_alep.html">
+          <img src="media/fablab_miniature.png" alt="Logo pour le fablab" />
+            <h3>Instagram du fablab</h3>
+            <p>Graphisme - Communication</p>
+          </a>
+        </div>
+
+      <div class="card_cachees">
+        
+      </div>
+    
+  </div>
+    
+  
+  </section>
+
+<!--Bas de page-->
+
+    <footer>
+      <div class="left-section">
+        <!--mettre img fleur-->
+      </div>
+      <div class="footer_links">
+        
+        
+        </p>
+      </div>
+      <div class="contact">
+        <!--mettre img fleur-->
+        <P>Contacts</P>
+
+        
+        <!--<img id="animation_logo" src="logo_ln_active.png" alt="Logo de linkedin active" />-->
+        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target ="_blank" ><img id="logos" src="media/logo_ln.png"  alt="Logo de linkedin" /></a>
+
+        <img onclick="myFunction()"id="logos" src="media/logo_mail.png" alt="Logo d email" />
+        <input type="text" value="emeline.boulic22@laposte.net" id="myInput">
+      </div>
+
+        <!--pour copier coller l email dans le presse-papiers-->
+
+        <script>
+          function myFunction() {
+            // Get the text field
+            var copyText = document.getElementById("myInput");
+          
+            // Select the text field
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+          
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(copyText.value);
+            
+            // Alert the copied text : copyText.value
+            alert("Email copié");
+          }
+          </script>
+          
+      </div>
+ 
+    </footer>
+
+  </body>
+  </html>
+  
+
+</body>
+
+
+</html>
