@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  
+  <link rel="stylesheet" href="../caroussel.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../fonctionnalites.js"></script>
+
+  <!--pas encore choisi-->
+  <link rel="icone miniature" type="image/png" href="/favicon.png"/>
+
+  <!--Typo-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
+  </head>
+<body>
+
+<!--Barre de navigation-->
+
+<nav class="navbar">
+  <a id ="nom_site" href="../index.html">Portfolio</a></div>
+  <ul class="nav-links">
+    <li><a href="../communication.html">Communication</a></li>
+    <li><a href="../webdesign.html">Webdesign</a></li>
+    <li><a href="../graphisme.html">Graphisme</a></li>
+    <li><a href="../videos.html">Vidéos</a></li>
+    <li><a href="../a_propos.html">À propos</a></li>
+  </ul>
+</nav>
+
+
+<!--Caroussel-->
+
+
+<div class="container"><!--Comme la div n etait pas fermee, le footer prenait la taille du container :(-->
+  <h1 class="titre">Proposition de couverture de livre</h1>
+<div class="projet-cards">
+
+    <section class="carousel">
+      <div class="arrow left"><span>&#171;</span></div>
+      <div class="img_cont_wrapper">
+          <div class="img_cont" style="left:0">
+              <img class ="illust" src ="../media/couverture_alan.png" alt = "Couverture de livre avec nouveau logo"><br/>
+              <img class ="illust" src ="../media/couture_livre.png" alt = "Couverture de livre refaite"><br/>
+
+          </div>
+      </div>
+      <div class="arrow right"><span>&#187;</span></div>
+    </section>
+
+    <script type="text/javascript">caroussel_2()</script><!--toujours appeler le js apres le html du caroussel-->
+
+<!--ALEP-->
+
+  <div class="description_projet">
+    <p>
+      En groupe de 5, nous avons proposé une nouvelle charte graphique pour les Editions ALeP.
+      Parmis nos prototypes de logos et de première de couvertures, nous avon gardé celui
+      en forme de A qui modernise l'image de la marque, ainsi que ma couverture de livre. 
+      Elle est moins beige et accompagné d'une illustration permettant d'identifier plus
+      facilement le thème du livre, dans un style évoquant l'univers des contes et des romans. 
+      
+  </br></br>
+  <a href="https://infolocale.actu.fr/associations/organisme-editions-alep-556757/article-lannion-partenariat
+  -entre-alep-maison-d-edition-et-des-etudiants
+  -de-l-iut-de-lannion-69905">Plus d'informations sur la collaboration ici ou dans la vidéo</a>
+  </p>
+  <iframe id="vid_facebook" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61557746666054%2Fvideos%2F583755727761888%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+  </div>
+</div>
+</div>
+
+
+<!--Footer-->
+
+<footer>
+  <div class="left-section">
+    <!--mettre img fleur-->
+  </div>
+  <div class="footer_links">
+    
+    
+    </p>
+  </div>
+  <div class="contact">
+    <!--mettre img fleur-->
+    <P>Contacts</P>
+
+    
+    <!--<img id="animation_logo" src="logo_ln_active.png" alt="Logo de linkedin active" />-->
+    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target ="_blank" ><img id="logos" src="../media/logo_ln.png"  alt="Logo de linkedin" /></a>
+
+    <img onclick="copie_colle()"id="logos" src="../media/logo_mail.png" alt="Logo d email" />
+    <input type="text" value="emeline.boulic22@laposte.net" id="myInput">
+  </div>
+</div>
+
+</footer>
+
+
+</body>
+
+
+</html>

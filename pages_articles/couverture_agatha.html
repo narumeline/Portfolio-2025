@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  
+  <link rel="stylesheet" href="../caroussel.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../fonctionnalites.js"></script>
+
+  <!--pas encore choisi-->
+  <link rel="icone miniature" type="image/png" href="/favicon.png"/>
+
+  <!--Typo-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
+  </head>
+</body>
+
+<!--Barre de navigation-->
+
+<nav class="navbar">
+  <a id ="nom_site" href="../index.html">Portfolio</a></div>
+  <ul class="nav-links">
+    <li><a href="../communication.html">Communication</a></li>
+    <li><a href="../webdesign.html">Webdesign</a></li>
+    <li><a href="../graphisme.html">Graphisme</a></li>
+    <li><a href="../videos.html">Vidéos</a></li>
+    <li><a href="../a_propos.html">À propos</a></li>
+  </ul>
+</nav>
+
+
+<!--Caroussel-->
+
+
+<div class="container"><!--Comme la div n etait pas fermee, le footer prenait la taille du container :(-->
+  <h1 class="titre">Refonte d'une couverture de livre</h1>
+<div class="projet-cards">
+
+    <section class="carousel">
+      <div class="arrow left"><span>&#171;</span></div>
+      <div class="img_cont_wrapper">
+          <div class="img_cont" style="left:0">
+              <img class ="illust" src ="../media/ils_etaient_dix.png" alt = "Remake d'une couverture de livre "><br/>
+              <img class ="illust" src ="../media/couverture_agatha.png" alt = "Couverture originale"><br/>
+
+          </div>
+      </div>
+      <div class="arrow right"><span>&#187;</span></div>
+    </section>
+
+    <script type="text/javascript">caroussel_2()</script><!--toujours appeler le js apres le html du caroussel-->
+
+<!--Agatha-->
+
+  <div class="description_projet">
+    <p>
+      J’ai refait la première de couverture du livre “Ils étaient dix“, d’Agatha Christie. 
+      Dans le livre, le couple O’Nymes invite 10 personnes à séjourner dans leur résidence
+       privée,  cependant une fois arrivés les invités se retrouvent seuls sur l’île et sont
+        tous accusés d’avoir commis un meurtre par une voix dans la demeure. Par la suite, 
+        ils se retrouvent coupés du reste du monde, à cause d’une tempête et des phénomènes 
+        paranormaux vont surgir.
+      </br></br>
+      J’ai représenté l’île du soldat sur laquelle se dresse la grande demeure des O’Nymes,
+       et ai voulue donner une atmosphère inquiétante et dramatique. Pour celà je me suis 
+       inspirée de certains livre de Stephen King sur lesquels on voyait très souvent son nom
+        ou un élément visuel en rouge. Les fenêtres de la demeure sont donc représentées rouge.
+         Le reste du décors est un montage photo réalisé sur Photoshop, j’ai changé les couleurs
+          pour donner une ambiance nocturne. Pour le titre j’ai repris une police d’une des 
+          couvertures originales.
+  </p>
+  </div>
+</div>
+</div>
+
+
+<!--Footer-->
+
+<footer>
+  <div class="left-section">
+    <!--mettre img fleur-->
+  </div>
+  <div class="footer_links">
+    
+    
+    </p>
+  </div>
+  <div class="contact">
+    <!--mettre img fleur-->
+    <P>Contacts</P>
+
+    
+    <!--<img id="animation_logo" src="logo_ln_active.png" alt="Logo de linkedin active" />-->
+    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target ="_blank" ><img id="logos" src="../media/logo_ln.png"  alt="Logo de linkedin" /></a>
+
+    <img onclick="copie_colle()"id="logos" src="../media/logo_mail.png" alt="Logo d email" />
+    <input type="text" value="emeline.boulic22@laposte.net" id="myInput">
+  </div>
+</div>
+
+</footer>
+
+
+</body>
+
+
+</html>
