@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  
+  <link rel="stylesheet" href="../caroussel.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../fonctionnalites.js"></script>
+
+  <!--pas encore choisi-->
+  <link rel="icone miniature" type="image/png" href="/favicon.png"/>
+
+  <!--Typo-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
+  </head>
+</body>
+
+<!--Barre de navigation-->
+
+<nav class="navbar">
+  <div class="dropdown">
+    <a id ="nom_site" class="dropmenu" href="../index_english.html">Portfolio</a>
+    <div class="dropdown-content">
+      <a href="fablab_english.html">English</a>
+      <a href="fablab.html">Francais</a>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="../pages_filtres/communication_english.html">Communication</a></li>
+    <li><a href="../pages_filtres/webdesign_english.html">Webdesign</a></li>
+    <li><a href="../pages_filtres/graphisme_english.html">Graphic design</a></li>
+    <li><a href="../pages_filtres/videos_english.html">Video editing</a></li>
+    <li><a href="../a_propos_english.html">Find out more</a></li>
+  </ul>
+</nav>
+
+
+<!--Caroussel-->
+
+
+<div class="container"><!--Comme la div n etait pas fermee, le footer prenait la taille du container :(-->
+  <h1 class="titre">Proposition de logo pour le Fablab</h1>
+<div class="projet-cards">
+
+    <section class="carousel">
+      <div class="arrow left"><span>&#171;</span></div>
+      <div class="img_cont_wrapper">
+          <div class="img_cont" style="left:0">
+              <img class ="illust" src ="../media/logo_fab_origine.png" alt = "Logo original du Fablab"><br/>
+              <img class ="illust" src ="../media/fablab_logo.png" alt = "Proposition de logo pour le Fablab"><br/>
+              <img class ="illust" src ="../media/test_fab.png" alt = "Proposition de bio instagram"><br/>
+          </div>
+      </div>
+      <div class="arrow right"><span>&#187;</span></div>
+    </section>
+
+    <script type="text/javascript">caroussel_3()</script><!--toujours appeler le js apres le html du caroussel-->
+
+<!--Fablab-->
+
+  <div class="description_projet">
+<h3>My tasks: </h3>
+  <p>Audit and write a communication recommendation on Instagram for the Fablab of Lannion,<br>
+    Design a new graphic charter,<br>
+    Design a new, more modern logo in the spirit of technology.<br><br>
+    </p>
+      <strong>Acquired :</strong> Writing <br>
+      <strong>Tools : </strong>Figma, Google Docs, Canva
+  </div>
+</div>
+</div>
+
+
+<!--Footer-->
+
+<footer>
+  <div class="left-section">
+    <!--mettre img fleur-->
+  </div>
+  <div class="footer_links">
+    
+    
+    </p>
+  </div>
+  <div class="contact">
+    <!--mettre img fleur-->
+    <P>Contacts</P>
+
+    
+    <!--<img id="animation_logo" src="logo_ln_active.png" alt="Logo de linkedin active" />-->
+    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target ="_blank" ><img id="logos" src="../media/logo_ln.png"  alt="Logo de linkedin" /></a>
+
+    <img onclick="copie_colle()"id="logos" src="../media/logo_mail.png" alt="Logo d email" />
+    <input type="text" value="emeline.boulic22@laposte.net" id="myInput">
+  </div>
+</div>
+
+</footer>
+
+
+</body>
+
+
+</html>
