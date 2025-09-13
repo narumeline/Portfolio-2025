@@ -253,6 +253,57 @@ body {
   color: #f29d8d;
 }
 
+
+/*stage*/
+
+
+.container {
+      display: grid;
+      grid-template-columns: 0.7fr 0.5fr; /* deux colonnes de largeur égale */
+      gap: 0px; /* espace entre les colonnes */
+      margin-left: 350px;
+      margin-right: 350px;
+      margin-bottom : 70px;
+      margin-top: 110px;
+
+    }
+
+    .col {
+      /*margin:50px;*/
+      padding: 15px; 
+      /*background-color: #f4f4f4;*/   /*couleur du container*/
+      border-radius: 8px;
+
+    }
+
+    .col p{
+      font-family: "Balsamiq Sans", sans-serif;
+      color:#554e4e;
+    }
+
+    .col h3{
+  font-family: "ThephirLight";
+  color:#0a3399;
+    }
+
+    .col img{
+      width: 100%;
+      height: 35%;
+      object-fit:cover;
+    }
+
+    #gros_titre{
+  font-size:40px;
+  font-family: Sugarpie;
+  color:#577ad0;
+  letter-spacing : 2px;
+    }
+
+
+
+
+
+
     /*Projets*/
 
 
