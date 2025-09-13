@@ -21,6 +21,7 @@
 
 
 
+
 body {
       margin: 0;
       padding: 0;
@@ -48,7 +49,7 @@ body {
     }
 
     #nom_site{
-      font-family: "Marko One", serif;
+      font-family: "SugarPie";
       font-weight: 400;
       font-style: normal;
       font-size:1.5em;
@@ -109,79 +110,148 @@ body {
     
     .dropdown:hover #nom_site {color:#ffffff;}
 
-  /*Bannière*/
-     
-    .taille_img{
-      width: 7%;
-      margin-left:1000px;
-      padding:0px;
-      margin-top:32px;
-      position: absolute;
-    }
 
-    .taille_img_fleur{
-      width: 10%;
-      margin-left:0px;
-      padding:0px;
-      margin-top:32px;
-      display:flex;
-    }
 
-.taille_img_bulle{
-      width: 15%;
-      margin-left:1100px;
-      padding:0px;
-      margin-top:32px;
-      position: absolute;
-    }
 
-    .hero-content{
-        
-        background-color: #6E85BF;
-        margin-top:140px;
-        padding: 50px;
-        padding-top: 20px;
-        text-align: left;
-        color: white;
-        border-radius: 25px;
-        width:800px; /* 999px; */
-        height: 180px;
-        /*display: block;*/
-        margin-left: auto;
-        margin-right: auto;
-        
-    }
-    .hero h1 {
-      display:flex;
-      font-weight: bold;
-      font-family: "Lemon", serif;
-      font-weight: 400;
-      font-style: normal;
-    }
 
-    .hero p{
-      justify-content: left;
-      padding:0px;
-      margin:0px;
-      
-    }
 
-    .bouton_vide {
-      margin-top: 15px;
-      padding: 10px 20px;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border:solid white 0.5px;
-      background-color: #6E85BF;
-    }
-    .bouton_vide a{
-      color:#ffffff;
-    }
+  /*Accueil stage et sections*/
+  
+        /* Accueil */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 colonnes égales */
+  min-height: 70vh; /* toute la hauteur de la fenêtre */
+}
 
-    .bouton_vide:hover{
-      background-color: #596ea4;
-    }
+/* Présentation à gauche */
+
+@font-face { /* pour utiliser le fichier d une police */
+    font-family : SugarPie;
+    src: url(media/fontes/SugarPie.ttf);
+}
+
+@font-face { /* pour utiliser le fichier d une police */
+    font-family : ThephirLight;
+    src: url(media/fontes/ThephirLight.ttf);
+}
+
+
+.presentation {
+  display: flex;
+  width: 100%;
+  max-width: none; /* enlève la limite */
+  height: 350px;     /* fixe une hauteur */
+  margin: 40px 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.balsamiq-sans-regular {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.colonne-gauche {
+   font-family: "Balsamiq Sans", sans-serif;
+  margin-top:50px;
+  margin-left:50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centre verticalement */
+  align-items: center;     /* centre horizontalement */
+  padding: 10px;
+}
+
+
+/* Colonne droite */
+.colonne-droite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centre verticalement */
+  align-items: center;     /* centre horizontalement */
+  padding: 40px;
+  margin-top:50px;
+}
+
+.texte {
+  background: #496ccf;
+  color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 30px; /* moins de padding vertical */
+
+}
+
+.texte h4 {
+  margin: 0 0 15px;
+  font-size: 1rem;
+}
+
+.texte p {
+  margin: 0 0 15px;/* Ca rend le txt de la page petit */
+  line-height: 1.6;/* C l interligne */
+}
+
+.image {
+  flex: 0 0 45%;
+  /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);*/
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+            /* Compétences */
+.competences {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Balsamiq Sans", sans-serif;
+}
+
+.competence {
+  max-width: 200px;
+}
+
+.icone {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #8da9f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+}
+
+          /* Bouton Voir les projets */
+.cta {
+  text-align: center;
+}
+
+.cta a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #496ccf;
+  text-decoration: none;
+  font-family:"Brush Script MT", cursive;
+}
+
+.cta .fleche {
+  font-size: 2rem;
+  margin-top: 10px;
+  color: #f29d8d;
+}
 
     /*Projets*/
 
