@@ -257,12 +257,12 @@ body {
 /*stage*/
 
 
-.container {
+.section_stage {
       display: grid;
       grid-template-columns: 0.7fr 0.5fr; /* deux colonnes de largeur égale */
       gap: 0px; /* espace entre les colonnes */
-      margin-left: 350px;
-      margin-right: 350px;
+      margin-left: 330px;
+      margin-right: 330px;
       margin-bottom : 70px;
       margin-top: 110px;
 
@@ -279,6 +279,7 @@ body {
     .col p{
       font-family: "Balsamiq Sans", sans-serif;
       color:#554e4e;
+      line-height:22px;
     }
 
     .col h3{
@@ -292,8 +293,13 @@ body {
       object-fit:cover;
     }
 
+    #localisation{
+      font-family: "Inter", serif;
+      font-weight: bold;
+    }
+
     #gros_titre{
-  font-size:40px;
+  font-size:35px;
   font-family: Sugarpie;
   color:#577ad0;
   letter-spacing : 2px;
@@ -408,11 +414,7 @@ body {
 
     #logos{margin-right:20px;}
 
-  
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
+
 
       footer {
         background-color: #90A4E8;
