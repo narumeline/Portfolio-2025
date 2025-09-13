@@ -270,7 +270,7 @@ body {
 
     .col {
       /*margin:50px;*/
-      padding: 10px; 
+      padding: 15px; 
       /*background-color: #f4f4f4;*/   /*couleur du container*/
       border-radius: 8px;
 
@@ -280,7 +280,7 @@ body {
       font-family: "Balsamiq Sans", sans-serif;
       color:#554e4e;
       line-height:22px;
-      font-size:15px;
+      font-size:17px;
     }
 
     .col h3{
