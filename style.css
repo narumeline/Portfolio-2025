@@ -278,9 +278,9 @@ body {
 
     .col p{
       font-family: "Balsamiq Sans", sans-serif;
+      font-size:10px;
       color:#554e4e;
       line-height:22px;
-      font-size:17px;
     }
 
     .col h3{
@@ -300,7 +300,7 @@ body {
     }
 
     #gros_titre{
-    font-size:20px;
+    font-size:30px;
     font-family: Sugarpie;
     color:#577ad0;
     letter-spacing : 2px;
