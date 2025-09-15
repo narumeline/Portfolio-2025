@@ -263,8 +263,18 @@ body {
       gap: 0px; /* espace entre les colonnes */
       margin-left: 330px;
       margin-right: 330px;
-      margin-bottom : 70px;
       margin-top: 110px;
+
+    }
+
+    
+.section_categories_projet {
+      display: grid;
+      grid-template-columns: 0.7fr 0.5fr; /* deux colonnes de largeur égale */
+      gap: 0px; /* espace entre les colonnes */
+      margin-left: 330px;
+      margin-right: 330px;
+      margin-bottom : 70px;
 
     }
 
@@ -278,7 +288,7 @@ body {
 
     .col p{
       font-family: "Balsamiq Sans", sans-serif;
-      font-size:15px;
+      font-size:16px;
       color:#554e4e;
       line-height:22px;
     }
@@ -300,7 +310,7 @@ body {
     }
 
     #gros_titre{
-    font-size:45px;
+    font-size:40px;
     font-family: Sugarpie;
     color:#577ad0;
     letter-spacing : 2px;
