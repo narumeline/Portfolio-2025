@@ -455,6 +455,12 @@ body {
         gap: 20px;
       }
 
+      .footer_links p{
+        color:rgb(87, 93, 187);
+        font-family: Sugarpie;
+        font-size: 25px;
+      }
+      
       .footer_links a{
         color:black;
       }
