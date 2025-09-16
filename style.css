@@ -136,16 +136,15 @@ body {
     src: url(media/fontes/ThephirLight.ttf);
 }
 
-
-.presentation {
+.presentation_moi {
   display: flex;
-  width: 100%;
-  max-width: none; /* enlève la limite */
-  height: 350px;     /* fixe une hauteur */
-  margin: 40px 0;
+  width: 90%;         /* prend 90% de la largeur de la fenêtre */
+  max-width: 1400px;  /* limite large pour les grands écrans */
+  margin: 40px auto;  /* centré avec espace au-dessus et en dessous */
+  border-radius: 15px;
   overflow: hidden;
-  border-radius: 10px;
 }
+
 
 .balsamiq-sans-regular {
   font-family: "Balsamiq Sans", sans-serif;
@@ -381,7 +380,9 @@ body {
       font-weight:500;
     }
 
-    
+    #english_card{
+      padding-bottom: 35px;
+    }
 
     .card img {
       width: 100%;
