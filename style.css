@@ -289,12 +289,12 @@ body {
       font-family: "Balsamiq Sans", sans-serif;
       font-size:16px;
       color:#554e4e;
-      line-height:11px;
+      line-height:5px;
     }
 
     .col h3{
-    font-family: "ThephirLight";
-    color:#0a3399;
+  font-family: "ThephirLight";
+  color:#0a3399;
     }
 
     .col img{
@@ -378,7 +378,6 @@ body {
       color: #3B83EE;
     font-family: "Inter", serif;
       font-weight:500;
-      font-size:10px;
     }
 
     #english_card{
