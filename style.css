@@ -262,11 +262,22 @@ body {
       gap: 0px; /* espace entre les colonnes */
       margin-left: 330px;
       margin-right: 330px;
-      margin-top: 110px;
-
+      margin-top: 5px;
+      margin-bottom:50px;
     }
 
+    /* c pour les pages projets */
+    .section_projet {
+      display: grid;
+      grid-template-columns: 0.7fr 0.5fr; /* deux colonnes de largeur égale */
+      gap: 120px; /* espace entre les colonnes */
+      margin-left: 200px;
+      margin-right: 330px;
+      margin-top: 5px;
+      margin-bottom:50px;
+    }
     
+    /* c sur la page index dans la section stage */
 .section_categories_projet {
       display: grid;
       grid-template-columns: 0.7fr 0.5fr; /* deux colonnes de largeur égale */
@@ -287,7 +298,7 @@ body {
 
     .col p{
       font-family: "Balsamiq Sans", sans-serif;
-      font-size:12px;
+      font-size:14px;
       color:#554e4e;
     }
 
@@ -371,6 +382,10 @@ body {
     }
     .card a{
       color: #585454;
+    }
+
+    .card h3{
+      font-size:15px;
     }
 
     .card p{
@@ -490,14 +505,17 @@ body {
 .carousel {
     margin-top:50px;
     margin-bottom: 5%;
-    height: 25vw; /* 30vw; */
+    height: 50vw; /* hauteur du caroussel 25vw; */
     /*pas toucher*/
-    width: calc(5% + 20%);
+    /*width: calc(5% + 20%);*/
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
     /*margin: 0 auto;*/
     /*margin-left: 5%;*/
+    width:45%;  /*width du carousel*/
+  /*background-color: #090e1a;*/
+
 }
 
 
@@ -506,11 +524,11 @@ body {
 }
 
 .img_cont_wrapper {
-  width: 100%;
+  /*width:100%;*/ /*je viens de le cacher*/
   height: 100%;
   overflow: hidden;
   position: relative;
-
+  /*background-color: #aeb7d0;*/
   border-radius: 10px;
    /*
    border: 1px solid #ddd;
@@ -518,7 +536,7 @@ body {
 }
 
 .img_cont {
-  width: 492%;
+  width: 100%; /* hauteur max des images : 492%*/
   /*et ici*/
   display: flex;
   position: absolute;
@@ -526,12 +544,14 @@ body {
 }
 
 .img_cont img {
-  margin-top: 0px; /* 50px; c la marge en haut */ 
-  width: 20.33%; /* taille img*/
-  height: 5%;
-  object-fit: cover;
-  
+  margin-top: 0;
+  width: 100%;       /* prend toute la largeur du conteneur */
+  height: auto;      /* conserve les proportions */
+  object-fit: contain; /* affiche toute l’image sans coupe */
+
 }
+
+
 
 .arrow {
   width: 20px; /* 40x; c la marge en haut */ 
@@ -542,7 +562,9 @@ body {
   justify-content: center;
   opacity: 1; /* 0.6; */ 
   padding: 0% 0%;  /* c pour enlever les bords */
-  
+  /*background-color: #0a3399;*/
+  height: 80%;
+
 }
 
 .projet-cards {
@@ -553,17 +575,39 @@ body {
     margin-bottom: 20px;
     height: 100%;
     position:relative;
+    /*width:100%;*/
   }
 
   #page_filtre_vid{ /* pour refixer le footer en bas */
     height:350px;
   }
 
+
+/* chaque colonne occupe 50% de la largeur */
+.section_stage .col {
+  flex: 1;
+}
+
+/* ton carrousel prend toute la largeur de sa colonne */
+.carousel {
+  margin-top: 20px;
+  margin-bottom: 5%;
+  height: 70vh;        /* plus grand, en fonction de la hauteur de l’écran */
+  width: 100%;         /* occupe toute sa colonne */
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
 /*A propos*/
 
 .presentation{
   width:500px;
-  height:500ox;
+  height:500px;
 }
 
 /*responsive à faire*/

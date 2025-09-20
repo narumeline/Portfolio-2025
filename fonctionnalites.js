@@ -13,6 +13,48 @@ function copie_colle() {
   alert("Email copié");
 }
 
+
+function grand_caroussel_4() {
+  const l = document.querySelector(".arrow.left");
+  const r = document.querySelector(".arrow.right");
+  const imgCont = document.querySelector(".img_cont");
+  const images = imgCont.querySelectorAll("img");
+  const wrapper = document.querySelector(".img_cont_wrapper");
+
+  let currentIndex = 0;
+  const total = images.length;
+
+  function getImgWidth() {
+    return wrapper.offsetWidth; // largeur actuelle du conteneur
+  }
+
+  function updateCarousel() {
+    imgCont.style.left = -(currentIndex * getImgWidth()) + "px";
+  }
+
+  r.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % total;
+    updateCarousel();
+  });
+
+  l.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + total) % total;
+    updateCarousel();
+  });
+
+  // Recalcule la position si on redimensionne la fenêtre
+  window.addEventListener("resize", updateCarousel);
+
+  // init
+  imgCont.style.position = "relative";
+  imgCont.style.left = "0px";
+}
+
+
+
+
+
+
 function caroussel_4() {
   let l = document.querySelector(".arrow.left")
   let r = document.querySelector(".arrow.right")
