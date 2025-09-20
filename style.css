@@ -287,14 +287,14 @@ body {
 
     .col p{
       font-family: "Balsamiq Sans", sans-serif;
-      font-size:10px;
+      font-size:16px;
       color:#554e4e;
       line-height:11px;
     }
 
     .col h3{
-  font-family: "ThephirLight";
-  color:#0a3399;
+    font-family: "ThephirLight";
+    color:#0a3399;
     }
 
     .col img{
