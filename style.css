@@ -287,9 +287,8 @@ body {
 
     .col p{
       font-family: "Balsamiq Sans", sans-serif;
-      font-size:16px;
+      font-size:12px;
       color:#554e4e;
-      line-height:5px;
     }
 
     .col h3{
@@ -489,6 +488,7 @@ body {
 
 
 .carousel {
+    margin-top:50px;
     margin-bottom: 5%;
     height: 25vw; /* 30vw; */
     /*pas toucher*/
