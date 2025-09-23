@@ -278,6 +278,12 @@ body {
     }
     
     /* c sur la page index dans la section stage */
+
+#credits{
+  font-style:italic;
+}
+
+
 .section_categories_projet {
       display: grid;
       grid-template-columns: 0.7fr 0.5fr; /* deux colonnes de largeur égale */
