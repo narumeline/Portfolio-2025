@@ -300,6 +300,14 @@ body {
 
     }
 
+
+    .col_img img{
+      margin:50px;
+      /*background-color: #f4f4f4;*/   /*couleur du container*/
+      border-radius: 25px;
+
+    }
+
     .col p{
       font-family: "Balsamiq Sans", sans-serif;
       font-size:14px;
