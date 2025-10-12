@@ -263,6 +263,7 @@ body {
       margin-left: 330px;
       margin-right: 330px;
       margin-top: 5px;
+      margin-bottom:50px;
     }
 
     /* c pour les pages projets */
@@ -272,8 +273,7 @@ body {
       gap: 120px; /* espace entre les colonnes */
       margin-left: 200px;
       margin-right: 330px;
-      margin-bottom:50px;
-      margin-top: 0;
+      margin-top: 5px;
     }
     
     /* c sur la page index dans la section stage */
@@ -289,30 +289,9 @@ body {
       gap: 0px; /* espace entre les colonnes */
       margin-left: 330px;
       margin-right: 330px;
-      /*margin-bottom: 20px;*/
-      margin-bottom: 20px;
-      padding-bottom: 10px;
+
     }
 
-
-.section_categories_projet .col {
-  margin-bottom: 0;
-  padding-bottom: 10px;
-}
-
-.section_categories_projet h3 {
-  margin-bottom: 10px;
-}
-
-.section_categories_projet .col p,
-.section_categories_projet .col h3 {
-  margin-bottom: 0;
-}
-
-.section_categories_projet .col p:last-child,
-.section_categories_projet .col h3:last-child {
-  margin-bottom: 0 !important;
-}
     .col {
       /*margin:50px;*/
       padding: 15px; 
@@ -328,18 +307,23 @@ body {
     }
 
     .col h3{
-  font-family: "ThephirLight";
-  color:#0a3399;
+    font-family: "ThephirLight";
+    color:#0a3399;
     }
 
     .col img{
       width: 100%;
-      max-height: 400px; /* Ajustez selon vos besoins */
+      height: 35%; /* Ajustez selon vos besoins */
       display: block;
       object-fit:cover;
-    }
 
-    
+      /*avant*/
+      /*
+       width: 100%;
+      height: 35%;
+      object-fit:cover;
+      */
+    }
 
     #localisation{
       font-family: "Inter", serif;
@@ -361,18 +345,19 @@ body {
     /*Projets*/
 
 
+/*
 .projets {
-      margin-top: 0;
-    padding-bottom: 45px
+      padding: 20px;
+      text-align: left;
+      margin-bottom:0px;
     }
+*/
 
 
-/*Projets*/
     #titre_section{
       padding-left:250px;
       color:#12088F;
-      margin-top: 0;
-      padding-top: 20px; /* Ajustez selon vos besoins */
+      margin:50px;
     }
   
 
@@ -381,9 +366,7 @@ body {
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
-      margin: 0;
-      padding: 0; /* Ajoutez cette ligne */
-      
+      margin:0px;
     }
 
 
@@ -393,7 +376,6 @@ body {
       border-radius: 10px;
       margin-right:20px;
       margin-bottom: 0px;
-      
     }
 
     .card {
@@ -406,7 +388,7 @@ body {
       color:#585454;
       margin-right:20px;
       box-shadow: 10px 9px #DBDBD4; /*rombre côté gauche -20px 16px */
-      /*margin-bottom: 20px;      */
+      margin-bottom: 20px;
     }
   
     .card:hover{
@@ -437,46 +419,33 @@ body {
     }
 
     #miniature_petite{
-      max-height:230px;
-      display: block;
+      height:230px;
     }
 
 
     #miniature_moyenne{
-      max-height:280px;
-      display: block;
+      height:280px;
     }
-    
 
     #miniature_normal{
-      max-height:340px;
-      display: block;
+      height:340px;
     }
-    
 
     #miniature_large{
-      max-height:370px;
-      display: block;
+      height:370px;
     }
-    
 
     #miniature_grande{
-      max-height:380px;
-      display: block;
+      height:380px;
     }
-    
 
     #miniature_gigantesque{
-      max-height:410px;
-      display: block;
+      height:410px;
     }
-    
 
     #miniature_max{
-      max-height:440px;
-      display: block;
+      height:440px;
     }
-    
     /*footer*/
     
 
@@ -621,6 +590,7 @@ body {
     height: 100%;
     position:relative;
     /*width:100%;*/
+    
   }
 
   #page_filtre_vid{ /* pour refixer le footer en bas */
