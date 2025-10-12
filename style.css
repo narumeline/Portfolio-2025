@@ -263,7 +263,6 @@ body {
       margin-left: 330px;
       margin-right: 330px;
       margin-top: 5px;
-      margin-bottom:50px;
     }
 
     /* c pour les pages projets */
@@ -273,8 +272,8 @@ body {
       gap: 120px; /* espace entre les colonnes */
       margin-left: 200px;
       margin-right: 330px;
-      margin-top: 5px;
       margin-bottom:50px;
+      margin-top: 0;
     }
     
     /* c sur la page index dans la section stage */
@@ -290,10 +289,30 @@ body {
       gap: 0px; /* espace entre les colonnes */
       margin-left: 330px;
       margin-right: 330px;
-      margin-bottom : 70px;
-
+      /*margin-bottom: 20px;*/
+      margin-bottom: 20px;
+      padding-bottom: 10px;
     }
 
+
+.section_categories_projet .col {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.section_categories_projet h3 {
+  margin-bottom: 10px;
+}
+
+.section_categories_projet .col p,
+.section_categories_projet .col h3 {
+  margin-bottom: 0;
+}
+
+.section_categories_projet .col p:last-child,
+.section_categories_projet .col h3:last-child {
+  margin-bottom: 0 !important;
+}
     .col {
       /*margin:50px;*/
       padding: 15px; 
@@ -315,9 +334,12 @@ body {
 
     .col img{
       width: 100%;
-      height: 35%;
+      max-height: 400px; /* Ajustez selon vos besoins */
+      display: block;
       object-fit:cover;
     }
+
+    
 
     #localisation{
       font-family: "Inter", serif;
@@ -339,17 +361,18 @@ body {
     /*Projets*/
 
 
-/*
 .projets {
-      padding: 20px;
-      text-align: left;
-      margin-bottom:0px;
+      margin-top: 0;
+    padding-bottom: 45px
     }
-*/
+
+
+/*Projets*/
     #titre_section{
       padding-left:250px;
       color:#12088F;
-      margin:50px;
+      margin-top: 0;
+      padding-top: 20px; /* Ajustez selon vos besoins */
     }
   
 
@@ -358,7 +381,9 @@ body {
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
-      margin:0px;
+      margin: 0;
+      padding: 0; /* Ajoutez cette ligne */
+      
     }
 
 
@@ -368,6 +393,7 @@ body {
       border-radius: 10px;
       margin-right:20px;
       margin-bottom: 0px;
+      
     }
 
     .card {
@@ -380,7 +406,7 @@ body {
       color:#585454;
       margin-right:20px;
       box-shadow: 10px 9px #DBDBD4; /*rombre côté gauche -20px 16px */
-      margin-bottom: 0px;
+      /*margin-bottom: 20px;      */
     }
   
     .card:hover{
@@ -411,33 +437,46 @@ body {
     }
 
     #miniature_petite{
-      height:230px;
+      max-height:230px;
+      display: block;
     }
 
 
     #miniature_moyenne{
-      height:280px;
+      max-height:280px;
+      display: block;
     }
+    
 
     #miniature_normal{
-      height:340px;
+      max-height:340px;
+      display: block;
     }
+    
 
     #miniature_large{
-      height:370px;
+      max-height:370px;
+      display: block;
     }
+    
 
     #miniature_grande{
-      height:380px;
+      max-height:380px;
+      display: block;
     }
+    
 
     #miniature_gigantesque{
-      height:410px;
+      max-height:410px;
+      display: block;
     }
+    
 
     #miniature_max{
-      height:440px;
+      max-height:440px;
+      display: block;
     }
+    
     /*footer*/
     
 
