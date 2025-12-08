@@ -253,6 +253,82 @@ body {
 }
 
 
+
+
+
+
+
+
+/*gallerie*/
+
+.texte_central{
+  text-align: center;
+  margin:50px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 25px;
+  background: #ddd;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.gallery a:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* --- Responsive breakpoints --- */
+
+/* Tablettes et écrans moyens */
+@media (max-width: 992px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Smartphones larges */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+/* Petits smartphones */
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .gallery img {
+    border-radius: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 /*stage*/
 
 
