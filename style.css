@@ -255,6 +255,74 @@ body {
 
 
 
+/*CV*/
+
+/* Conteneur */
+.cv-section {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: 80px 0;
+  flex-wrap: wrap;
+}
+
+/* Carte contenant bouton + texte */
+.cv-card {
+  text-align: center;
+  max-width: 260px;
+}
+
+/* Bouton */
+.cv-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding: 14px 22px;
+  border: 2px solid #3b82f6;  /* bleu moderne */
+  border-radius: 20px;
+  text-decoration: none;
+  background: white;
+  transition: all .25s ease;
+  transform: translateY(0);
+}
+
+/* Icône */
+.cv-icon {
+  font-size: 1.2rem;
+}
+
+/* Texte dans le bouton */
+.cv-text {
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #2563eb;    /* bleu plus profond */
+  font-weight: 500;
+}
+
+/* Phrase sous le bouton */
+.cv-desc {
+  margin-top: 15px;
+  font-size: .95rem;
+  color: #444;
+}
+
+/* ---- Effets au survol ---- */
+.cv-button:hover {
+  background: #e0edff;
+  border-color: #1d4ed8;
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  animation: bounce .4s ease;
+}
+
+/* Animation de rebond */
+@keyframes bounce {
+  0%   { transform: translateY(0) scale(1); }
+  40%  { transform: translateY(-6px) scale(1.04); }
+
+}
+
 
 
 
