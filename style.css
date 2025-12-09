@@ -275,23 +275,63 @@ body {
   padding: 0 20px;
 }
 
-.gallery img {
+/* Chaque item */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+/* Images */
+.gallery-item img {
   width: 100%;
   aspect-ratio: 3/4;
   object-fit: cover;
   border-radius: 25px;
   background: #ddd;
-  transition: transform .25s ease, box-shadow .25s ease;
+  transition: transform .3s ease;
 }
 
-.gallery a:hover img {
-  transform: scale(1.03);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .3s ease;
+  border-radius: 25px;
+}
+
+/* Style des textes */
+.overlay h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.overlay p {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Effet hover */
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
 }
 
 /* --- Responsive breakpoints --- */
 
-/* Tablettes et écrans moyens */
 @media (max-width: 992px) {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
@@ -299,7 +339,6 @@ body {
   }
 }
 
-/* Smartphones larges */
 @media (max-width: 768px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
@@ -307,7 +346,6 @@ body {
   }
 }
 
-/* Petits smartphones */
 @media (max-width: 480px) {
   .gallery {
     grid-template-columns: 1fr;
