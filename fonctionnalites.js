@@ -51,10 +51,6 @@ function grand_caroussel_4() {
 }
 
 
-
-
-
-
 function caroussel_4() {
   let l = document.querySelector(".arrow.left")
   let r = document.querySelector(".arrow.right")
@@ -117,9 +113,6 @@ function caroussel_3() {
 }
 
 
-
-
-
 function caroussel_2() {
   let l = document.querySelector(".arrow.left")
   let r = document.querySelector(".arrow.right")
@@ -149,3 +142,53 @@ function caroussel_2() {
       console.log(position)
   })
 }
+
+// Menu hamburger responsive
+document.addEventListener('DOMContentLoaded', function() {
+  // Créer le bouton hamburger s'il n'existe pas déjà
+  const navbar = document.querySelector('.navbar');
+  
+  if (navbar && !document.querySelector('.hamburger')) {
+    const hamburger = document.createElement('div');
+    hamburger.className = 'hamburger';
+    hamburger.innerHTML = `
+      <span></span>
+      <span></span>
+      <span></span>
+    `;
+    
+    navbar.appendChild(hamburger);
+    
+    // Toggle du menu
+    hamburger.addEventListener('click', function() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+      
+      // Animation du hamburger
+      this.classList.toggle('active');
+    });
+    
+    // Fermer le menu quand on clique sur un lien
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        const menu = document.querySelector('.nav-links');
+        const hamburger = document.querySelector('.hamburger');
+        menu.classList.remove('active');
+        hamburger.classList.remove('active');
+      });
+    });
+    
+    // Fermer le menu en cliquant en dehors
+    document.addEventListener('click', function(event) {
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      const navbar = document.querySelector('.navbar');
+      
+      if (hamburger && navLinks && !navbar.contains(event.target)) {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+      }
+    });
+  }
+});
